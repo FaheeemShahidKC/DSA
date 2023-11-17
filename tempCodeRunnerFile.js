@@ -1,0 +1,1 @@
+list.insertNode(100, 0)

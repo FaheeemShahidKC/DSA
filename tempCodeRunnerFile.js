@@ -1,1 +1,1 @@
-list.insertNode(100, 0)
+list.appendNode(50)

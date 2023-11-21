@@ -20,28 +20,24 @@ class LinkedList {
             return this.size
       }
 
-      prependNode(value) {
-            const node = new Node(value)
-            if (this.isEmpty()) {
-                  this.head = node
-                  this.tail = node
-            } else {
-                  node.next = this.head
-                  this.head = node
+      removeNode(index) {
+            if (index < 0 || index > this.size) {
+                  return
             }
-            this.size++
-      }
-
-      appendNode(value) {
-            const node = new Node(value);
-            if (this.isEmpty()) {
-                  this.head = node;
-                  this.tail = node;
+            let removedValue
+            if (index === 0) {
+                  removedValue = this.head
+                  this.head = this.head.next
             } else {
-                  this.tail.next = node;
-                  this.tail = node;
+                  let prev = this.head
+                  for (let i = 0; i < index - 1; i++) {
+                        prev = prev.next
+                  }
+                  removedValue = prev.next
+                  prev.next = removedValue.next
             }
-            this.size++;
+            this.size--
+            return removedValue.value
       }
 
       displayList() {
@@ -61,5 +57,8 @@ class LinkedList {
 }
 
 const list = new LinkedList()
-list.prependNode(50)
+list.appendNode(50)
+list.appendNode(56)
+list.displayList()
+list.removeNode(50)
 list.displayList()

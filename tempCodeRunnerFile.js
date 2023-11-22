@@ -1,1 +1,1 @@
-list.appendNode(50)
+list.appendNode(5)

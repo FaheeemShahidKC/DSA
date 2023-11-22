@@ -13,5 +13,26 @@ function search(arr , target){
       }
       return -1
 }
+
+function srch(arr,value){
+      let start = 0
+      let end = arr.length - 1
+      return hlpr(arr,value,start,end)
+}
+function hlpr(arr,value,start,end){
+      let mid = Math.floor(start + (end - start/2))
+      if(value === arr[mid]){
+            return mid
+      }else if(value > arr[mid]){
+            start = mid + 1 
+            return hlpr(arr,value,start,end)
+      }else if(value < arr[mid]){
+            end = mid - 1
+            return hlpr(arr,value,start,end)
+      }else{
+            return -1
+      }
+}
+
 const arr = [5,6,7,8,9,19,25,516]
-console.log(search(arr,5));
+console.log(srch(arr,9));

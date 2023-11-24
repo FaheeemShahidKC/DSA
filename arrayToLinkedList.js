@@ -82,15 +82,6 @@ class LinkedList {
             return removedValue.value
       }
 
-      printRev(num){
-            let size=this.size-num
-            let curr = this.head
-            for(let i=0;i<size-1;i++){
-                  curr = curr.next
-            }
-            console.log(curr.value);
-      }
-
       removeValue(value) {
             if (this.isEmpty()) {
                   return null
@@ -168,13 +159,13 @@ class LinkedList {
       }
 }
 
+function arrto(arr){
+      const list = new LinkedList()
+      for(ele of arr){
+            list.appendNode(ele)
+      }
+      list.displayList()
+}
 
-
-const list = new LinkedList()
-list.appendNode(20)
-list.appendNode(48)
-list.appendNode(30)
-list.appendNode(10)
-list.displayList()
-list.printRev(2)
-list.displayList()
+const arr = [5,8,5,8,5,8]
+arrto(arr)

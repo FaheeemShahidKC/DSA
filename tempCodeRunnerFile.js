@@ -1,1 +1,1 @@
-list.appendNode(5)
+startInd

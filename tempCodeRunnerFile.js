@@ -1,1 +1,1 @@
-startInd
+list.push(5)

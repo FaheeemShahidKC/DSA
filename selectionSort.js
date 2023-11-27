@@ -1,5 +1,5 @@
 function selection(arr) {
-      for (let j = 0; j < arr.length; j++) {
+      for (let j = 0; j < arr.length-1; j++) {
             let small = arr[j];
             let key = j;
             for (let i = j + 1; i < arr.length; i++) {
@@ -14,4 +14,4 @@ function selection(arr) {
       console.log(arr);
 }
 
-selection([9, 8, 7, 56, 725, 4, 273, 2, 1, 0]);
+selection([9,  2, 1, 200]);

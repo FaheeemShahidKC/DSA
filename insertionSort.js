@@ -11,4 +11,4 @@ function insertion(arr) {
       console.log(arr);
 }
 
-insertion([9, 2, 1, 200])
+insertion([1,8,7,2,4])

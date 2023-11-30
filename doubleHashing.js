@@ -44,11 +44,9 @@ class HashTable {
             let index = this.doubleHashing(key, attempt);
 
             while (this.keys[index] !== key) {
-                  // Collision: use double hashing to find the next index
                   attempt++;
                   index = this.doubleHashing(key, attempt);
 
-                  // If we reach an empty slot, the key is not in the hash table
                   if (this.keys[index] === undefined) {
                         return undefined;
                   }
@@ -57,7 +55,6 @@ class HashTable {
       }
 }
 
-// Example usage
 const hashTable = new HashTable(10);
 
 hashTable.put("John", 25);
@@ -65,7 +62,7 @@ hashTable.put("Jane", 30);
 hashTable.put("Doe", 35);
 hashTable.put("oDe", 40);
 
-console.log(hashTable.get("John")); // Output: 25
-console.log(hashTable.get("Jane")); // Output: 30
-console.log(hashTable.get("Doe"));  // Output: 35
-console.log(hashTable.get("oDe"));  // Output: 40
+console.log(hashTable.get("John")); 
+console.log(hashTable.get("Jane")); 
+console.log(hashTable.get("Doe"));  
+console.log(hashTable.get("oDe"));  

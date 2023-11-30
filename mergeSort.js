@@ -20,4 +20,4 @@ function merge(left,right){
       return [...sorted,...left,...right]
 }
 
-console.log(divide([62,6,9,58,8,9]));
+console.log(divide([62,9]));

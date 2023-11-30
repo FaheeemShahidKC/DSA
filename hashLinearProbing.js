@@ -18,7 +18,7 @@ class HashTable {
 
             let i = 1
             while (this.keys[index] !== undefined) {
-                  index = (index + i * i) % this.size;
+                  index = (index + i) % this.size;
                   i++
             }
 

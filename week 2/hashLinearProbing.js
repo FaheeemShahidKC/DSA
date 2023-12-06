@@ -16,10 +16,11 @@ class HashTable {
       put(key, value) {
             let index = this.hash(key);
 
-            let i = 1
+            // let i = 1
             while (this.keys[index] !== undefined) {
-                  index = (index + i) % this.size;
-                  i++
+                  index = (index + 1) % this.size;
+                  // index = (index + i * i) % this.size;
+                  // i++
             }
 
             this.keys[index] = key;
@@ -43,11 +44,9 @@ class HashTable {
       display(){
             console.log(this.values);
       }
-
-
 }
 
-const hashTable = new HashTable(10);
+const hashTable = new HashTable(4);
 
 hashTable.put("John", 25);
 hashTable.put("Jane", 30);

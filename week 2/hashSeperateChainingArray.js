@@ -61,5 +61,5 @@ hashTable.put("Jane", 30);
 hashTable.put("Doe", 35);
 hashTable.put("oDe", 35);
 hashTable.get("John")
-hashTable.remove("Doe");
+// hashTable.remove("Doe");
 hashTable.contains();

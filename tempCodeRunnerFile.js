@@ -1,2 +1,2 @@
 
-// console.log("Queue size:", circularQueue.size());
+hashTable.put("oDe", 35);

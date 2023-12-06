@@ -97,9 +97,9 @@ class HashTableArray {
 const hashTable = new HashTableArray(10);
 
 hashTable.put("John", 25);
-hashTable.put("Jane", 30);
+// hashTable.put("Jane", 30);
 hashTable.put("Doe", 35);
 hashTable.put("oDe", 35);
-hashTable.get("John");
-hashTable.remove("Doe");
+// hashTable.get("John");
+// hashTable.remove("Doe");
 hashTable.contains();

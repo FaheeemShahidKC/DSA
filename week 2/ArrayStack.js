@@ -38,10 +38,7 @@ stack.push(2);
 stack.push(3);
 
 console.log("Stack:", stack.items);
-
 console.log("Peek:", stack.peek());
-
 const poppedItem = stack.pop();
 console.log("Popped item:", poppedItem);
-
 console.log("Stack after popping:", stack.items);

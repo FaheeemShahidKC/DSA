@@ -16,11 +16,10 @@ class LinkedList{
       }
 
       push(value){
+            const node = new Node(value)
             if(this.isEmpty()){
-                  const node = new Node(value)
                   this.top = node
             }else{
-                  const node = new Node(value)
                   node.next = this.top
                   this.top = node
             }

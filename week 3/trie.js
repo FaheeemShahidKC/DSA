@@ -46,9 +46,18 @@ class Trie {
 
 // Example usage:
 const trie = new Trie();
-trie.insert("apple");
+trie.insert("abcd");
 console.log(trie.search("apple")); // true
 console.log(trie.search("app")); // false
 console.log(trie.startsWith("app")); // true
-trie.insert("app");
+trie.insert("abdc");
 console.log(trie.search("app")); // true
+console.log(trie.root);
+console.log("====================");
+console.log(trie.root.children);
+console.log("====================");
+console.log(trie.root.children.a);
+console.log("====================");
+console.log(trie.root.children.a.children);
+console.log("====================");
+console.log(trie.root.children.a.children.b);

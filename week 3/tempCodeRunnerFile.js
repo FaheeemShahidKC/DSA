@@ -1,1 +1,1 @@
-root
+graph.insert("s", "j", true);

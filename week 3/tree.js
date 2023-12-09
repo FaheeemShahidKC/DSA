@@ -40,7 +40,6 @@ class Tree {
       }
 
       contains(value) {
-            let node = new Node(value)
             let curr = this.root
             while (curr !== null) {
                   if (value < curr.value) {

@@ -16,14 +16,11 @@ function maxHeapify(arr, index, size) {
       }
 }
 
-
 function heapSort(array) {
       const n = array.length;
-      //array convert to heap==========
       for (let i = Math.floor((n / 2) - 1); i >= 0; i--) {
             maxHeapify(array, i, n)
       }
-      //===swapping max value with the last element
       for (let j = n - 1; j >= 0; j--) {
             let temp = array[0]
             array[0] = array[j]
@@ -32,6 +29,5 @@ function heapSort(array) {
       }
       return array
 }
-
 
 console.log(heapSort([5, 5, 2, 65, 32, 5]))
